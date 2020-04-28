@@ -1,0 +1,182 @@
+%-------------------------
+% Author : Shannon Quinn
+%------------------------
+
+\documentclass[letterpaper,12pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontspec}
+\usepackage{xcolor}
+\usepackage{anyfontsize}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\definecolor{mycolor}{HTML}{ff9770}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item[]\small{
+    \textbf{#1}{#2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item[]
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\fontsize{45}{42}\color{mycolor}\fontspec{Pattaya-Regular} Shannon Quinn} & Email : {srquinn1@gmail.com}\\
+   Senior Computer Science student seeking a full time Software Developer role & +1-585-507-7702 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{\color{mycolor}Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Rochester Institute of Technology}{Rochester, NY}
+      {Bachelor of Science in Computer Science;  GPA: 3.56; Dean's List}{Graduation Date: May 2020}
+       	\resumeItemListStart
+       		\resumeItem{Relevant Coursework:}{ Principles of Data Mining, Big Data Analytics, Database System Implementation, Analysis of Algorithms,  Principles of Data Management, Intro to Software Engineering   }
+	\resumeItemListEnd
+    \resumeSubheading
+      {Monroe Community College}{Rochester, NY}
+      {Associate of Science in Mathematics;  GPA: 3.55; Dean's List; Phi Theta Kappa}{Jan 2015 - July 2017}
+  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{\color{mycolor}Skills}
+  \resumeSubHeadingListStart
+    
+      \resumeSubItem
+      {Languages}{: Python, Java, C, C\#, Javascript,  SQL, HTML, CSS}
+      \resumeSubItem
+      {Tools}{: mySQL, Kafka, Hadoop, postgreSQL, git, slack}
+%  \resumeSubItem
+%  {Operating Systems}{: macOS, Linux, Windows }
+       \resumeSubItem
+      {Soft Skills}{: communication, team work, problem solving, creativity, fast learner }
+      
+  \resumeSubHeadingListEnd
+  
+  %-----------EXPERIENCE-----------------
+\section{\color{mycolor}Experience}
+  \resumeSubHeadingListStart
+  
+      \resumeSubheading
+      {HubSpot}{Boston, MA}
+      {Backend Software Engineer Co-Op}{July 2019 - December 2019}
+      	\resumeItemListStart
+        		\resumeItem{GDPR cleanup }{created a kafka consumer to clean up any email data related to a customer to make our systems in compliance with GDPR requirements}
+		\resumeItem{Properties Migration }{released a new version of a core REST API and client to leverage other teams to enable more a custom experience in the CRM }
+		\resumeItem{Other responsibilities }{wrote unit and acceptance tests, jobs to clean and backfill data, maintain core microservices, pager duty}
+      	\resumeItemListEnd
+
+    \resumeSubheading
+      {Rochester Institute of Technology}{Rochester, NY}
+      {Student Lab Instructor}{August 2018 - June 2019}
+      	\resumeItemListStart
+        		\resumeItem{}{Facilitated problem solving sessions for Computer Science students to prepare them for their labs, responsible for grading students' labs and projects, held hours in tutoring center to help students in need}
+      	\resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+%-----------PROJECTS-----------------
+\section{\color{mycolor}Projects}
+     \resumeSubHeadingListStart
+    %\resumeSubItem{Pet Store Database}{ Database Management - Fall 2018}
+    %\resumeItemListStart
+    %\resumeItem{}{Design of relational database with PostgreSQL and command line interface for customer use}
+    %\resumeItem{}{Languages and Tools - Python}
+    %\resumeItem{}{Group project}
+    %\resumeItem{}{Beautiful Soup used for webscraping of data}
+    %\resumeItemListEnd
+    
+    \resumeSubheading
+     {Database System Implementation}{ Spring 2020}
+     {implementation of a database from scratch }{}
+     \resumeItemListStart
+     \resumeItem{\cdot}{ Group project}
+      \resumeItem{\cdot}{ Wrote a storage manager to create pages}
+       \resumeItem{\cdot}{ Wrote DML and DDL Parsers to execute SQL statements}
+     \resumeItem{Languages}{Java}
+     \resumeItemListEnd
+    
+     \resumeSubheading
+      {Targeted Advertising}{Spring 2019}
+      {Identified groups of grocery store customers to be able to provide targeted advertising}{}
+     \resumeItemListStart
+     \resumeItem{\cdot}{ Used PCA to find the most important features}
+     \resumeItem{\cdot}{ Implemented an agglomeration algorithm on the resulting data to group customers}
+     \resumeItem{\cdot}{ Used K-NN based on the resulting model to identify future customers}
+     \resumeItem{Languages and Tools }{ Python, NumPy, Matplotlib}
+     \resumeItem{}{}
+     \resumeItemListEnd
+      
+%     \resumeSubheading
+%     {Find Fido}{ February 2019}
+%     {Lost dog finder app using machine learning}{}
+%     \resumeItemListStart
+%     \resumeItem{\cdot}{ Group project started at Brickhack V (RIT hackathon)}
+%     \resumeItem{Languages and Tools}{ Python, Javascript, Google Cloud Auto ML}
+%     \resumeItemListEnd
+     
+  \resumeSubHeadingListEnd
+
+
+  
+  %-----------EXTRA-----------------
+
+\end{document}
